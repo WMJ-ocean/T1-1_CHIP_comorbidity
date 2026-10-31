@@ -13,7 +13,13 @@
 09_ldsc/*.M
 09_ldsc/*.M_50_5.summary
 
-# Manuscript under review - not public before acceptance
+# Third-party reference panel (89 MB, re-downloadable from Zenodo record 8182036)
+09_ldsc/ref/
+
+# Unpublished results and internal working reports - not public before acceptance
+07_mr_protein/
+T1-1_分析结果报告_完整版.md
+T1-1_数据评估与信号格局.md
 10_manuscript/
 08_figures/
 
