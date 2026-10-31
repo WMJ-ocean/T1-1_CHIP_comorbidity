@@ -159,7 +159,7 @@ def main():
 
     # 文档属性（避免投稿时显示 "python-docx"）
     cp = doc.core_properties
-    cp.author = "Mingjing Wang; Yi Chen; Richeng Quan; Lv Yan; Xiaomei Hu"
+    cp.author = "Mingjing Wang; Yi Chen; Lv Yan; Richeng Quan; Xiaomei Hu"
     cp.last_modified_by = "Xiaomei Hu"
     cp.title = ("Germline CHIP liability causes myeloproliferative neoplasms "
                 "independently of JAK2")

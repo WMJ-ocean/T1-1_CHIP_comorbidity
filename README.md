@@ -5,7 +5,7 @@ Analysis code for the manuscript:
 > **Germline CHIP liability causes myeloproliferative neoplasms independently of *JAK2*:
 > Mendelian randomisation and colocalisation**
 
-Mingjing Wang, Yi Chen, Richeng Quan, Lv Yan, Xiaomei Hu
+Mingjing Wang, Yi Chen, Lv Yan, Richeng Quan, Xiaomei Hu
 
 Department of Hematology, Xiyuan Hospital, China Academy of Chinese Medical Sciences, Beijing, China
 

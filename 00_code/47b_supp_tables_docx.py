@@ -124,7 +124,7 @@ def main():
     sec.top_margin = sec.bottom_margin = Cm(2.2)
 
     cp = doc.core_properties
-    cp.author = "Mingjing Wang; Yi Chen; Richeng Quan; Lv Yan; Xiaomei Hu"
+    cp.author = "Mingjing Wang; Yi Chen; Lv Yan; Richeng Quan; Xiaomei Hu"
     cp.last_modified_by = "Xiaomei Hu"
     cp.title = "Supplementary Tables - Germline CHIP liability and myeloproliferative neoplasms"
 
