@@ -1,0 +1,2 @@
+"id.exposure","id.outcome","outcome","exposure","egger_intercept","se","pval"
+"MPN_to_CHIP","CHIP_targets.tsv","CHIP_targets.tsv","MPN_to_CHIP",0.0194959541777568,0.0484883826821409,0.69416152697593

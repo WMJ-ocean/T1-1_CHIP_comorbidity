@@ -1,0 +1,50 @@
+Warning messages:
+1: package 'dplyr' was built under R version 4.5.3 
+2: package 'ggplot2' was built under R version 4.5.3 
+exposure IV = 16 ; outcome matched rows = 17
+Harmonising MPNnoJAK2_to_CHIP (MPNnoJAK2_to_CHIP) and CHIP_targets.tsv (CHIP_targets.tsv)
+after harmonise (mr_keep) = 14 SNPs
+Analysing 'MPNnoJAK2_to_CHIP' on 'CHIP_targets.tsv'
+
+===== MR results =====
+                     method nsnp         b         se         pval       OR
+1 Inverse variance weighted   14 0.3759007 0.06890571 4.889261e-08 1.456303
+2                  MR Egger   14 0.6727565 0.16164549 1.318264e-03 1.959632
+3           Weighted median   14 0.2441811 0.04100064 2.592113e-09 1.276575
+4             Weighted mode   14 0.1219206 0.06632430 8.897768e-02 1.129664
+     OR_low  OR_high
+1 1.2723245 1.666884
+2 1.4275096 2.690109
+3 1.1780020 1.383397
+4 0.9919575 1.286488
+
+-- heterogeneity --
+        id.exposure       id.outcome          outcome          exposure
+1 MPNnoJAK2_to_CHIP CHIP_targets.tsv CHIP_targets.tsv MPNnoJAK2_to_CHIP
+2 MPNnoJAK2_to_CHIP CHIP_targets.tsv CHIP_targets.tsv MPNnoJAK2_to_CHIP
+                     method        Q Q_df       Q_pval
+1                  MR Egger 220.6975   12 1.701161e-40
+2 Inverse variance weighted 293.5011   13 5.501539e-55
+
+-- pleiotropy (Egger intercept) --
+        id.exposure       id.outcome          outcome          exposure
+1 MPNnoJAK2_to_CHIP CHIP_targets.tsv CHIP_targets.tsv MPNnoJAK2_to_CHIP
+  egger_intercept         se       pval
+1      -0.0817067 0.04106666 0.06991689
+
+-- MR-PRESSO global test --
+$RSSobs
+[1] 413.8672
+
+$Pvalue
+[1] "<0.000333333333333333"
+
+
+written -> ../05_iv/07_mr 
+Warning messages:
+1: In MRPRESSO::mr_presso(BetaOutcome = "beta.outcome", BetaExposure = "beta.exposure",  :
+  No outlier were identified, therefore the results for the outlier-corrected MR are set to NA
+2: Removed 1 row containing missing values or values outside the scale range
+(`geom_point()`). 
+3: Removed 1 row containing missing values or values outside the scale range
+(`geom_point()`). 

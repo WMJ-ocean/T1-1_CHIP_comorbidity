@@ -1,0 +1,3 @@
+"id.exposure","id.outcome","outcome","exposure","method","Q","Q_df","Q_pval"
+"CHIPg_to_MDS","MDS_targets.tsv","MDS_targets.tsv","CHIPg_to_MDS","MR Egger",29.7445567797647,18,0.0400052025956409
+"CHIPg_to_MDS","MDS_targets.tsv","MDS_targets.tsv","CHIPg_to_MDS","Inverse variance weighted",30.803871661499,19,0.0424182384622278

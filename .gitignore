@@ -1,0 +1,37 @@
+# Ignore large raw data and derived matrices (available from the corresponding author)
+
+# Raw summary statistics and downloaded archives (16 GB)
+02_raw/
+03_meta/
+
+# Intermediate cleaned / extracted data (200 MB+)
+04_clean/
+06_targets/
+07_p2_transcriptome/
+09_ldsc/*.sumstats.tsv
+09_ldsc/*.log
+09_ldsc/*.M
+09_ldsc/*.M_50_5.summary
+
+# Manuscript under review - not public before acceptance
+10_manuscript/
+08_figures/
+
+# Logs
+01_log/
+
+# Temporary files
+*.tmp
+*.bak
+*.bad
+*.part
+~$*
+.DS_Store
+Thumbs.db
+
+# Large binaries
+*.rds
+*.RData
+*.rdata
+*.cel
+*.CEL

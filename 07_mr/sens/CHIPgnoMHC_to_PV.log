@@ -1,0 +1,52 @@
+Warning messages:
+1: package 'dplyr' was built under R version 4.5.3 
+2: package 'ggplot2' was built under R version 4.5.3 
+exposure IV = 20 ; outcome matched rows = 23
+Harmonising CHIPgnoMHC_to_PV (CHIPgnoMHC_to_PV) and PV_targets.tsv (PV_targets.tsv)
+Removing the following SNPs for incompatible alleles:
+rs2317700
+after harmonise (mr_keep) = 19 SNPs
+Analysing 'CHIPgnoMHC_to_PV' on 'PV_targets.tsv'
+
+===== MR results =====
+                     method nsnp        b        se         pval       OR
+1 Inverse variance weighted   19 1.258604 0.2277175 3.256811e-08 3.520502
+2                  MR Egger   19 2.009604 0.3595744 3.259781e-05 7.460364
+3           Weighted median   19 1.443191 0.1487312 2.917737e-22 4.234184
+4             Weighted mode   19 1.402552 0.1535884 3.544687e-08 4.065562
+    OR_low   OR_high
+1 2.253033  5.501001
+2 3.687093 15.095099
+3 3.163495  5.667249
+4 3.008732  5.493607
+
+-- heterogeneity --
+       id.exposure     id.outcome        outcome         exposure
+1 CHIPgnoMHC_to_PV PV_targets.tsv PV_targets.tsv CHIPgnoMHC_to_PV
+2 CHIPgnoMHC_to_PV PV_targets.tsv PV_targets.tsv CHIPgnoMHC_to_PV
+                     method        Q Q_df       Q_pval
+1                  MR Egger  80.3966   17 3.260714e-10
+2 Inverse variance weighted 110.2770   18 2.794844e-15
+
+-- pleiotropy (Egger intercept) --
+       id.exposure     id.outcome        outcome         exposure
+1 CHIPgnoMHC_to_PV PV_targets.tsv PV_targets.tsv CHIPgnoMHC_to_PV
+  egger_intercept         se       pval
+1      -0.1084364 0.04313961 0.02231665
+
+-- MR-PRESSO global test --
+$RSSobs
+[1] 124.5152
+
+$Pvalue
+[1] "<0.000333333333333333"
+
+
+written -> ../05_iv/07_mr 
+Warning messages:
+1: In MRPRESSO::mr_presso(BetaOutcome = "beta.outcome", BetaExposure = "beta.exposure",  :
+  No outlier were identified, therefore the results for the outlier-corrected MR are set to NA
+2: Removed 1 row containing missing values or values outside the scale range
+(`geom_point()`). 
+3: Removed 1 row containing missing values or values outside the scale range
+(`geom_point()`). 

@@ -1,0 +1,3 @@
+"id.exposure","id.outcome","outcome","exposure","method","Q","Q_df","Q_pval"
+"CHIPgnoMHC_to_AA","AA_targets.tsv","AA_targets.tsv","CHIPgnoMHC_to_AA","MR Egger",17.6540507106046,17,0.410973260332191
+"CHIPgnoMHC_to_AA","AA_targets.tsv","AA_targets.tsv","CHIPgnoMHC_to_AA","Inverse variance weighted",18.0156952300243,18,0.454619088487723

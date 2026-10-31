@@ -1,0 +1,2 @@
+SNP	chr	pos	effect_allele	other_allele	beta	se	pval	eaf
+rs771228480	7	107580725	C	G	3.74073	0.635368	3.92085e-09	0.0003083

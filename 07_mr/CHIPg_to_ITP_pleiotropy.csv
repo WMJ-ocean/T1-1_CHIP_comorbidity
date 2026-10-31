@@ -1,0 +1,2 @@
+"id.exposure","id.outcome","outcome","exposure","egger_intercept","se","pval"
+"CHIPg_to_ITP","ITP_targets.tsv","ITP_targets.tsv","CHIPg_to_ITP",-0.0508036197437281,0.0257772092186188,0.0643145432004176

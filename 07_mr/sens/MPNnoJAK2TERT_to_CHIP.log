@@ -1,0 +1,50 @@
+Warning messages:
+1: package 'dplyr' was built under R version 4.5.3 
+2: package 'ggplot2' was built under R version 4.5.3 
+exposure IV = 15 ; outcome matched rows = 17
+Harmonising MPNnoJAK2TERT_to_CHIP (MPNnoJAK2TERT_to_CHIP) and CHIP_targets.tsv (CHIP_targets.tsv)
+after harmonise (mr_keep) = 13 SNPs
+Analysing 'MPNnoJAK2TERT_to_CHIP' on 'CHIP_targets.tsv'
+
+===== MR results =====
+                     method nsnp         b         se         pval       OR
+1 Inverse variance weighted   13 0.2704134 0.05068362 9.537522e-08 1.310506
+2                  MR Egger   13 0.5155311 0.09848615 2.791593e-04 1.674528
+3           Weighted median   13 0.1504721 0.04004093 1.713069e-04 1.162383
+4             Weighted mode   13 0.1096388 0.06712529 1.283409e-01 1.115875
+     OR_low  OR_high
+1 1.1865780 1.447378
+2 1.3805724 2.031072
+3 1.0746466 1.257282
+4 0.9783119 1.272781
+
+-- heterogeneity --
+            id.exposure       id.outcome          outcome              exposure
+1 MPNnoJAK2TERT_to_CHIP CHIP_targets.tsv CHIP_targets.tsv MPNnoJAK2TERT_to_CHIP
+2 MPNnoJAK2TERT_to_CHIP CHIP_targets.tsv CHIP_targets.tsv MPNnoJAK2TERT_to_CHIP
+                     method         Q Q_df       Q_pval
+1                  MR Egger  67.44183   11 3.732207e-10
+2 Inverse variance weighted 113.30748   12 1.324038e-18
+
+-- pleiotropy (Egger intercept) --
+            id.exposure       id.outcome          outcome              exposure
+1 MPNnoJAK2TERT_to_CHIP CHIP_targets.tsv CHIP_targets.tsv MPNnoJAK2TERT_to_CHIP
+  egger_intercept         se       pval
+1     -0.06545856 0.02393266 0.01940016
+
+-- MR-PRESSO global test --
+$RSSobs
+[1] 137.8609
+
+$Pvalue
+[1] "<0.000333333333333333"
+
+
+written -> ../05_iv/07_mr 
+Warning messages:
+1: In MRPRESSO::mr_presso(BetaOutcome = "beta.outcome", BetaExposure = "beta.exposure",  :
+  No outlier were identified, therefore the results for the outlier-corrected MR are set to NA
+2: Removed 1 row containing missing values or values outside the scale range
+(`geom_point()`). 
+3: Removed 1 row containing missing values or values outside the scale range
+(`geom_point()`). 

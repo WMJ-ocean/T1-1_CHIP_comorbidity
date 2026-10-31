@@ -1,0 +1,52 @@
+Warning messages:
+1: package 'dplyr' was built under R version 4.5.3 
+2: package 'ggplot2' was built under R version 4.5.3 
+exposure IV = 20 ; outcome matched rows = 23
+Harmonising CHIPgnoMHC_to_AA (CHIPgnoMHC_to_AA) and AA_targets.tsv (AA_targets.tsv)
+Removing the following SNPs for incompatible alleles:
+rs2317700
+after harmonise (mr_keep) = 19 SNPs
+Analysing 'CHIPgnoMHC_to_AA' on 'AA_targets.tsv'
+
+===== MR results =====
+                     method nsnp           b        se      pval        OR
+1 Inverse variance weighted   19 -0.13421021 0.1763681 0.4466771 0.8744062
+2                  MR Egger   19 -0.31242614 0.3513926 0.3863534 0.7316697
+3           Weighted median   19 -0.07460452 0.2713695 0.7833788 0.9281105
+4             Weighted mode   19  0.02768400 0.2919149 0.9254930 1.0280708
+     OR_low  OR_high
+1 0.6188504 1.235494
+2 0.3674545 1.456889
+3 0.5452621 1.579771
+4 0.5801496 1.821822
+
+-- heterogeneity --
+       id.exposure     id.outcome        outcome         exposure
+1 CHIPgnoMHC_to_AA AA_targets.tsv AA_targets.tsv CHIPgnoMHC_to_AA
+2 CHIPgnoMHC_to_AA AA_targets.tsv AA_targets.tsv CHIPgnoMHC_to_AA
+                     method        Q Q_df    Q_pval
+1                  MR Egger 17.65405   17 0.4109733
+2 Inverse variance weighted 18.01570   18 0.4546191
+
+-- pleiotropy (Egger intercept) --
+       id.exposure     id.outcome        outcome         exposure
+1 CHIPgnoMHC_to_AA AA_targets.tsv AA_targets.tsv CHIPgnoMHC_to_AA
+  egger_intercept         se      pval
+1      0.02340816 0.03966651 0.5628704
+
+-- MR-PRESSO global test --
+$RSSobs
+[1] 20.10705
+
+$Pvalue
+[1] 0.473
+
+
+written -> ../05_iv/07_mr 
+Warning messages:
+1: In MRPRESSO::mr_presso(BetaOutcome = "beta.outcome", BetaExposure = "beta.exposure",  :
+  No outlier were identified, therefore the results for the outlier-corrected MR are set to NA
+2: Removed 1 row containing missing values or values outside the scale range
+(`geom_point()`). 
+3: Removed 1 row containing missing values or values outside the scale range
+(`geom_point()`). 

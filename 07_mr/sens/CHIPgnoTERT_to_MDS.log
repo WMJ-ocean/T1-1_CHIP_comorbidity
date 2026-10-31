@@ -1,0 +1,52 @@
+Warning messages:
+1: package 'dplyr' was built under R version 4.5.3 
+2: package 'ggplot2' was built under R version 4.5.3 
+exposure IV = 20 ; outcome matched rows = 23
+Harmonising CHIPgnoTERT_to_MDS (CHIPgnoTERT_to_MDS) and MDS_targets.tsv (MDS_targets.tsv)
+Removing the following SNPs for incompatible alleles:
+rs2317700
+after harmonise (mr_keep) = 19 SNPs
+Analysing 'CHIPgnoTERT_to_MDS' on 'MDS_targets.tsv'
+
+===== MR results =====
+                     method nsnp         b        se       pval       OR
+1 Inverse variance weighted   19 0.4031069 0.1664634 0.01545256 1.496467
+2                  MR Egger   19 0.3434788 0.3987517 0.40101289 1.409844
+3           Weighted median   19 0.4666444 0.1964169 0.01751163 1.594634
+4             Weighted mode   19 0.5301929 0.2882999 0.08246672 1.699260
+     OR_low  OR_high
+1 1.0798679 2.073784
+2 0.6452777 3.080316
+3 1.0850947 2.343444
+4 0.9657263 2.989962
+
+-- heterogeneity --
+         id.exposure      id.outcome         outcome           exposure
+1 CHIPgnoTERT_to_MDS MDS_targets.tsv MDS_targets.tsv CHIPgnoTERT_to_MDS
+2 CHIPgnoTERT_to_MDS MDS_targets.tsv MDS_targets.tsv CHIPgnoTERT_to_MDS
+                     method        Q Q_df     Q_pval
+1                  MR Egger 28.48785   17 0.03955084
+2 Inverse variance weighted 28.53378   18 0.05438317
+
+-- pleiotropy (Egger intercept) --
+         id.exposure      id.outcome         outcome           exposure
+1 CHIPgnoTERT_to_MDS MDS_targets.tsv MDS_targets.tsv CHIPgnoTERT_to_MDS
+  egger_intercept         se      pval
+1     0.006145416 0.03711821 0.8704535
+
+-- MR-PRESSO global test --
+$RSSobs
+[1] 31.29862
+
+$Pvalue
+[1] 0.06433333
+
+
+written -> ../05_iv/07_mr 
+Warning messages:
+1: In MRPRESSO::mr_presso(BetaOutcome = "beta.outcome", BetaExposure = "beta.exposure",  :
+  No outlier were identified, therefore the results for the outlier-corrected MR are set to NA
+2: Removed 1 row containing missing values or values outside the scale range
+(`geom_point()`). 
+3: Removed 1 row containing missing values or values outside the scale range
+(`geom_point()`). 

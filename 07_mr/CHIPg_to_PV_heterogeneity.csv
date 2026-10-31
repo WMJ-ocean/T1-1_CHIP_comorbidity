@@ -1,0 +1,3 @@
+"id.exposure","id.outcome","outcome","exposure","method","Q","Q_df","Q_pval"
+"CHIPg_to_PV","PV_targets.tsv","PV_targets.tsv","CHIPg_to_PV","MR Egger",80.752139048965,18,6.3268982518134e-10
+"CHIPg_to_PV","PV_targets.tsv","PV_targets.tsv","CHIPg_to_PV","Inverse variance weighted",111.20322794122,19,4.78215366726308e-15

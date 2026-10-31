@@ -1,0 +1,3 @@
+"id.exposure","id.outcome","outcome","exposure","method","Q","Q_df","Q_pval"
+"MPN_to_CHIP","CHIP_targets.tsv","CHIP_targets.tsv","MPN_to_CHIP","MR Egger",525.800587711064,13,4.81538250542695e-104
+"MPN_to_CHIP","CHIP_targets.tsv","CHIP_targets.tsv","MPN_to_CHIP","Inverse variance weighted",532.339286153146,14,1.28078167133913e-104
